@@ -42,6 +42,8 @@ img {
     border: none;
 }
 
+/*ここから*/
+
 .wrap {
     display: flex;
     justify-content: space-between;
@@ -86,8 +88,6 @@ h1 {
 
 .menu {
     display: flex;
-    justify-content: flex-end;
-    list-style: none;
     align-items: center;
 }
 
@@ -111,8 +111,8 @@ h1 {
     }
 
     .menu li {
-        width: 100%;
         border-bottom: 1px solid #222222;
+        border-right: none;
         padding: 10px;
     }
 }
