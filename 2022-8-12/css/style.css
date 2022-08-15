@@ -69,13 +69,12 @@ dt {
     font-weight: bold;
     color: rgb(27, 127, 126);
     border-left: 7px solid rgb(27, 127, 126);
-    margin-left: 10px;
     margin: 10px;
 }
 
 dd {
     margin-left: 10px;
-    line-height: 20px;
+    line-height: 1.5;
     font-size: 15px;
     font-weight: 500;
 }
@@ -87,7 +86,6 @@ dd {
 
     .wrap {
         display: block;
-        max-width: 400px;
         margin: 0 auto;
     }
 
