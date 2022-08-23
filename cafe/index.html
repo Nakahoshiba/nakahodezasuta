@@ -7,20 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>デザインカフェ</title>
     <meta name="description" content="デザインカフェのサイトです。">
-    <link rel="stylesheet" href="css/styel.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <header>
+    <header id="header">
         <div class="header_wrap">
             <h1 class="header_logo"><img src="images/design_cafe_logo_header@2x.png" alt="DESIGN CAFE"></h1>
             <nav class="pc_nav">
                 <ul>
-                    <li><a href="">ABOUT US</a></li>
-                    <li><a href="">MENU</a></li>
-                    <li><a href="">GALLERY</a></li>
-                    <li><a href="">EVENT</a></li>
-                    <li><a href="">ACCESS</a></li>
+                    <li><a href="#section_about">ABOUT US</a></li>
+                    <li><a href="#section_menu">MENU</a></li>
+                    <li><a href="#section_gallery">GALLERY</a></li>
+                    <li><a href="#section_wrap">EVENT</a></li>
+                    <li><a href="#section_access">ACCESS</a></li>
                 </ul>
             </nav>
         </div>
@@ -30,24 +30,24 @@
     </ul>
 
     <!--ここから課題-->
-    <main>
+    <main role="main">
         <div class="section_wrap">
             <section class="section_heading">
                 <p class="lead">Have a happy day From a cup of coffee.</p>
-                <h2>ハッピーに溢れる1日を<span>1杯のコーヒーから。</span></h2>
+                <h2>ハッピーに溢れる1日を<br>1杯のコーヒーから。</h2>
                 <p class="lead2">毎日を丁寧に大切に過ごしたい。だからこそ一杯一杯丁寧にコーヒーを入れ
-                    <span>足を運んでくれるお客さんには落ち着く空間とこだわりのコーヒーを提供したい。</span>
+                    <br>足を運んでくれるお客さんには落ち着く空間とこだわりのコーヒーを提供したい。
                 </p>
             </section>
 
             <!--ABOUT US-->
-            <section class="section_about">
+            <section id="section_about" class="section_about">
                 <picture class="about_main">
                     <img src="images/pc_about-100.jpg" alt="こだわりのホットコーヒー">
                 </picture>
                 <div class="about_wrap">
                     <h2 class="about_logo"><img src="images/about_us@2x.png" alt="about_us"></h2>
-                    <h3>私たちが提供する<span>こだわりのコーヒー</span></h3>
+                    <h3>私たちが提供する<br>こだわりのコーヒー</h3>
                     <p>サービスを提供する上での想いや心がけていることなど、メッ
                         <br>セージを文章で紹介します。サービスを提供する上での想い
                         <br>や心がけていることなど、メッセージを文章で紹介します。サー
@@ -61,7 +61,7 @@
             </section>
 
             <!--menu-->
-            <section class="section_menu">
+            <section id="section_menu" class="section_menu">
                 <h2 class="menu_logo"><img src="images/menu@2x.png" alt="menu"></h2>
                 <div class="menu_wrap">
                     <div class="service">
@@ -96,22 +96,68 @@
                     </div>
                 </div>
             </section>
-
-            <!--GALLERY-->
-            <section class="section_gallery">
-                <h2 class="gallery_logo"><img src="images/gallery@2x.png" alt="ギャラリー"></h2>
-                <ul class="gallery_images">
-                    <li><img src="images/pc_gallary_05-100.jpg" alt="にぎわっている様子"></li>
-                    <li><img src="images/pc_gallary_04-100.jpg" alt="コーヒー豆の写真"></li>
-                    <li><img src="images/pc_gallary_03-100.jpg" alt="店内の写真"></li>
-                    <li><img src="images/pc_gallary_02-100.jpg" alt="カフェの文字"></li>
-                    <li><img src="images/pc_gallary_01-100.jpg" alt="ホットコーヒーの写真"></li>
-                </ul>
-            </section>
-
-            <!---->
         </div>
+
+        <!--GALLERY-->
+        <section id="section_gallery" class="section_gallery">
+            <h2 class="gallery_logo"><img src="images/gallery@2x.png" alt="ギャラリー"></h2>
+            <ul class="gallery_images">
+                <li><img src="images/pc_gallary_05-100.jpg" alt="にぎわっている様子"></li>
+                <li><img src="images/pc_gallary_04-100.jpg" alt="コーヒー豆の写真"></li>
+                <li><img src="images/pc_gallary_03-100.jpg" alt="店内の写真"></li>
+                <li><img src="images/pc_gallary_02-100.jpg" alt="カフェの文字"></li>
+                <li><img src="images/pc_gallary_01-100.jpg" alt="ホットコーヒーの写真"></li>
+            </ul>
+        </section>
+
+        <!--EVENT-->
+        <div id="section_wrap" class="section_wrap">
+            <section class="section_event">
+                <h2 class="event_logo"><img src="images/event@2x.png" alt="イベント"></h2>
+                <div class="event_wrap">
+                    <ul class="event_info">
+                        <li>2020.06.23<span>7月はイベント出店のため0/0お休みします</span></li>
+                        <li>2020.03.15<span>春の新商品新発売。話題のあのブランドとコラボ</span></li>
+                        <li>2020.02.06<span>コーヒーの日で30％OFFイベントを開催［3日間限定］</span></li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+
+        <!--ACCESS-->
+        <section id="section_access" class="section_access">
+            <h2 class="access_logo"><img src="images/access@2x.png" alt="アクセス"></h2>
+            <div class="access_img"><iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.6813975021505!2d139.72746731525817!3d35.66022053019923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b771049dc33%3A0x5bfe0248594cc802!2z5YWt5pys5pyo44OS44Or44K6!5e0!3m2!1sja!2sjp!4v1661180011749!5m2!1sja!2sjp"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
     </main>
+
+    <!--footer-->
+    <footer>
+        <div class="footer_wrap">
+            <h2 class="footer_logo"><img src="images/design_cafe_logo_footer@2x.png" alt="DESIGN CAFE"></h2>
+            <div class="pc_footer">
+                <ul>
+                    <li>OPEN 18:00 / CLOSE 24:00</li>
+                    <li>〒150-0022</li>
+                    <li>東京都渋谷区東京南123デザインビルB1</li>
+                    <li>MAIL：info@designcafe.tokyo</li>
+                </ul>
+                <p>© 2021 DESIGN CAFE</p>
+            </div>
+
+        </div>
+    </footer>
+
+    <!--ページトップ-->
+    <div class="page_top">
+        <a href="#header"><img src="images/to_top@2x.png" alt="PAGE TOP"></a>
+
+    </div>
 </body>
 
 </html>
