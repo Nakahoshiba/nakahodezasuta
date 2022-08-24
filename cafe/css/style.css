@@ -89,8 +89,8 @@ body {
 
 .section_wrap {
     max-width: 1000px;
-    margin: 50px auto;
-    padding: 10px;
+    margin: 70px auto;
+    padding: 0 10px;
 }
 
 .section_heading {
@@ -99,20 +99,21 @@ body {
 
 .lead {
     font-size: 30px;
-    line-height: 3.86;
 }
 
 .section_heading h2 {
     font-size: 82px;
     line-height: 1.17;
-    margin-top: 30px;
-    margin-bottom: 40px;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    margin: 30px 0;
 }
 
 .lead2 {
     font-size: 23px;
     line-height: 1.65;
-    margin-bottom: 100px;
+    letter-spacing: 0.1em;
+    margin-bottom: 90px;
 }
 
 /*ABOUT US*/
@@ -120,7 +121,7 @@ body {
     display: flex;
 }
 
-.about_main img {
+.about_main {
     width: 500px;
     border-radius: 0 0 70px 0;
 }
@@ -128,6 +129,7 @@ body {
 .about_wrap {
     margin-left: 70px;
     margin-top: 50px;
+    width: 41%;
 }
 
 .about_logo {
@@ -137,7 +139,8 @@ body {
 .section_about h3 {
     font-size: 44px;
     line-height: 1.38;
-    margin: 40px 0;
+    font-weight: normal;
+    margin: 40px 0 15px;
 }
 
 .section_about p {
@@ -145,7 +148,7 @@ body {
     line-height: 1.62;
 }
 
-/*menu*/
+/*MENU*/
 .section_menu {
     margin-top: 100px;
 }
@@ -161,6 +164,10 @@ body {
     margin-top: 40px;
 }
 
+.service {
+    width: 30%;
+}
+
 .service_menu img {
     width: 300px;
     border-radius: 0 40px 0 0;
@@ -168,20 +175,22 @@ body {
 
 .service h3 {
     font-size: 38px;
-    line-height: 0.57;
+    line-height: 1;
+    font-weight: normal;
     color: #d30202;
-    margin-top: -2px;
+    margin-top: -13px;
+    padding-left: 13px;
 }
 
 .service p {
     font-size: 17px;
     line-height: 1.47;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 /*gallery*/
 .section_gallery {
-    margin-top: 100px;
+    margin-top: 85px;
 }
 
 .gallery_logo {
@@ -194,8 +203,9 @@ body {
 }
 
 /*event*/
-.section_event {
-    margin-top: 65px;
+
+.section_wrap {
+    margin-top: 60px;
 }
 
 .event_logo {
@@ -204,33 +214,39 @@ body {
 }
 
 .event_wrap {
-    border: 3.68px solid #4f260b;
+    border: 3px solid #4f260b;
     background: #ffffff;
     margin-top: 40px;
+    display: flex;
+    justify-content: center;
 }
 
 .event_info {
-    display: table;
-    text-align: left;
-    margin: 30px auto;
-    padding: 0;
+    margin: 30px;
 }
 
 .event_info li {
     font-size: 23px;
     line-height: 1.95;
-    padding-left: 60px;
 }
 
-span {
-    padding-left: 50px;
+.event_info li time {
+    margin-right: 40px;
+}
+
+.event_info li a {
     text-decoration: underline;
 }
 
 /*access*/
+
+.section_access {
+    margin-top: 70px;
+}
+
 .access_logo {
     width: 213px;
-    margin: 30px auto;
+    margin: 40px auto;
 }
 
 iframe {
@@ -241,12 +257,14 @@ iframe {
 /*フッター*/
 footer {
     background: #ffffff;
+    padding-bottom: 70px;
+    margin-top: -5px;
 }
 
 .footer_wrap {
     display: flex;
-    padding: 70px;
     max-width: 1000px;
+    padding: 70px 10px;
     margin: 0 auto;
 }
 
@@ -254,22 +272,18 @@ footer {
     width: 226px;
 }
 
-.pc_footer {
-    margin-left: 60px;
-}
-
 .pc_footer li {
     font-size: 20px;
     color: #000000;
     line-height: 1.95;
+    margin-left: 60px;
 }
 
-.pc_footer p {
+footer p {
     font-size: 16px;
     line-height: 2.18;
     color: #000000;
-    margin-top: 70px;
-    margin-left: 115px;
+    text-align: center;
 }
 
 /*ページトップ*/

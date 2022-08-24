@@ -19,7 +19,7 @@
                     <li><a href="#section_about">ABOUT US</a></li>
                     <li><a href="#section_menu">MENU</a></li>
                     <li><a href="#section_gallery">GALLERY</a></li>
-                    <li><a href="#section_wrap">EVENT</a></li>
+                    <li><a href="#section_event">EVENT</a></li>
                     <li><a href="#section_access">ACCESS</a></li>
                 </ul>
             </nav>
@@ -30,7 +30,7 @@
     </ul>
 
     <!--ここから課題-->
-    <main role="main">
+    <main>
         <div class="section_wrap">
             <section class="section_heading">
                 <p class="lead">Have a happy day From a cup of coffee.</p>
@@ -42,25 +42,27 @@
 
             <!--ABOUT US-->
             <section id="section_about" class="section_about">
-                <picture class="about_main">
-                    <img src="images/pc_about-100.jpg" alt="こだわりのホットコーヒー">
-                </picture>
+                <div class="about_main">
+                    <picture>
+                        <img src="images/pc_about-100.jpg" alt="こだわりのホットコーヒー">
+                    </picture>
+                </div>
                 <div class="about_wrap">
                     <h2 class="about_logo"><img src="images/about_us@2x.png" alt="about_us"></h2>
                     <h3>私たちが提供する<br>こだわりのコーヒー</h3>
                     <p>サービスを提供する上での想いや心がけていることなど、メッ
-                        <br>セージを文章で紹介します。サービスを提供する上での想い
-                        <br>や心がけていることなど、メッセージを文章で紹介します。サー
-                        <br>ビスを提供する上での想いや心がけていることなど、メッセー
-                        <br>ジを文章で紹介します。サービスを提供する上での想いや心
-                        <br>がけていることなど、メッセージを文章で紹介します。サービス
-                        <br>を提供する上での想いや心がけていることなど、メッセージを
-                        <br>文章で紹介します。
+                        セージを文章で紹介します。サービスを提供する上での想い
+                        や心がけていることなど、メッセージを文章で紹介します。サー
+                        ビスを提供する上での想いや心がけていることなど、メッセー
+                        ジを文章で紹介します。サービスを提供する上での想いや心
+                        がけていることなど、メッセージを文章で紹介します。サービス
+                        を提供する上での想いや心がけていることなど、メッセージを
+                        文章で紹介します。
                     </p>
                 </div>
             </section>
 
-            <!--menu-->
+            <!--MENU-->
             <section id="section_menu" class="section_menu">
                 <h2 class="menu_logo"><img src="images/menu@2x.png" alt="menu"></h2>
                 <div class="menu_wrap">
@@ -70,8 +72,8 @@
                         </picture>
                         <h3>Drink</h3>
                         <p>ドリンクメニューの概要を100文字程度で
-                            <br>紹介します。素材やこだわりなどをアピー
-                            <br>ルしていきます。
+                            紹介します。素材やこだわりなどをアピー
+                            ルしていきます。
                         </p>
                     </div>
                     <div class="service">
@@ -80,8 +82,8 @@
                         </picture>
                         <h3>Food</h3>
                         <p>フードメニューの概要を100文字程度で紹
-                            <br>介します。素材やこだわりなどをアピール
-                            <br>していきます。
+                            介します。素材やこだわりなどをアピール
+                            していきます。
                         </p>
                     </div>
                     <div class="service">
@@ -90,8 +92,8 @@
                         </picture>
                         <h3>Sweets</h3>
                         <p>スイーツメニューの概要を100文字程度で
-                            <br>紹介します。素材やこだわりなどをアピー
-                            <br>ルしていきます。
+                            紹介します。素材やこだわりなどをアピー
+                            ルしていきます。
                         </p>
                     </div>
                 </div>
@@ -111,14 +113,14 @@
         </section>
 
         <!--EVENT-->
-        <div id="section_wrap" class="section_wrap">
-            <section class="section_event">
+        <div class="section_wrap">
+            <section id="section_event" class="section_event">
                 <h2 class="event_logo"><img src="images/event@2x.png" alt="イベント"></h2>
                 <div class="event_wrap">
                     <ul class="event_info">
-                        <li>2020.06.23<span>7月はイベント出店のため0/0お休みします</span></li>
-                        <li>2020.03.15<span>春の新商品新発売。話題のあのブランドとコラボ</span></li>
-                        <li>2020.02.06<span>コーヒーの日で30％OFFイベントを開催［3日間限定］</span></li>
+                        <li><time datetime="2020-06-23">2020.06.23</time><a>7月はイベント出店のため0/0お休みします</a></li>
+                        <li><time datetime="2020-03-05">2020.03.15</time><a>春の新商品新発売。話題のあのブランドとコラボ</a></li>
+                        <li><time datetime="2020-02-06">2020.02.06</time><a>コーヒーの日で30％OFFイベントを開催［3日間限定］</a></li>
                     </ul>
                 </div>
             </section>
@@ -147,16 +149,14 @@
                     <li>東京都渋谷区東京南123デザインビルB1</li>
                     <li>MAIL：info@designcafe.tokyo</li>
                 </ul>
-                <p>© 2021 DESIGN CAFE</p>
             </div>
-
         </div>
+        <p>© 2021 DESIGN CAFE</p>
     </footer>
 
     <!--ページトップ-->
     <div class="page_top">
         <a href="#header"><img src="images/to_top@2x.png" alt="PAGE TOP"></a>
-
     </div>
 </body>
 
