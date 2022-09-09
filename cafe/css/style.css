@@ -217,7 +217,7 @@ body {
     margin-bottom: 90px;
 }
 
-.sp_lead2 {
+.lead2 .sp_only {
     display: none;
 }
 
@@ -236,14 +236,10 @@ body {
 }
 
 @media screen and (max-width: 767px) {
-    .lead2 {
-        display: none;
-    }
-
     .section_wrap {
         width: 100%;
         margin: 0 auto;
-        padding: 1em 0;
+        padding: 0;
         padding-top: 0;
     }
 
@@ -258,29 +254,29 @@ body {
         line-height: 1.15;
         letter-spacing: 0.02em;
         margin: 0 auto;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
     }
 
-    .sp_lead2 {
+    .lead2 {
         display: block;
         font-size: 16px;
         line-height: 1.87;
-        letter-spacing: 0.1em;
         margin: 0 auto;
-        margin-bottom: 60px;
+        margin-bottom: 50px;
     }
 
-    .sp_lead2 span {
-        display: inline-block;
+    .lead2 .sp_only {
+        display: block;
     }
 }
+
 /*ABOUT US*/
 .section_about {
     display: flex;
 }
 
 .about_main {
-    width: 500px;
+    max-width: 500px;
 }
 
 .about_main img {
@@ -309,7 +305,7 @@ body {
     line-height: 1.62;
 }
 
-.sp_about_wrap {
+.sp_about_logo {
     display: none;
 }
 
@@ -317,52 +313,54 @@ body {
     .about_wrap h3 {
         font-size: 2.1em;
     }
-
-    .about_wrap p {
-        font-size: 1vw;
-    }
 }
 
 /*SP_ABOUT US*/
 
 @media screen and (max-width: 767px) {
-    .about_main {
-        display: none;
-    }
-
-    .about_wrap {
-        display: none;
-    }
-
-    .sp_about_wrap {
+    .section_about {
         display: block;
     }
 
     .about_logo {
+        display: none;
+    }
+
+    .sp_about_logo {
+        display: block;
         margin: 0 auto;
         margin-bottom: 14px;
         width: 160px;
     }
 
-    .about_text {
-        width: 335px;
+    .about_main {
+        max-width: none;
+        margin-bottom: 32px;
+    }
+
+    .about_main img {
+        border-radius: 0;
+    }
+
+    .about_wrap {
+        width: 100%;
         margin: 0 auto;
     }
 
-    .sp_about_wrap h3 {
+    .about_wrap h3 {
         font-size: 36px;
         line-height: 1.25;
         font-weight: normal;
-        margin-top: 35px;
-        margin-bottom: 25px;
+        margin-left: 20px;
+        margin-bottom: 20px;
     }
 
-    .sp_about_wrap p {
+    .about_wrap p {
         font-size: 16px;
         line-height: 1.75;
-        margin: 0 auto;
-        margin-bottom: 45px;
+        margin-bottom: 55px;
         text-align: justify;
+        padding: 0 20px;
     }
 }
 /*MENU*/
@@ -406,12 +404,8 @@ body {
 
 /*SP_MENU*/
 @media screen and (max-width: 767px) {
-    .section_wrap {
-        padding: 0;
-    }
-
     .section_menu {
-        margin-top: 0;
+        margin-top: 50px;
     }
 
     .menu_logo {
@@ -425,17 +419,23 @@ body {
 
     .service {
         margin: 0 auto;
-        margin-bottom: 55px;
-        width: 300px;
+        width: 100%;
+        padding: 0 37px;
+        box-sizing: border-box;
     }
 
     .service h3 {
         font-size: 40px;
+        margin-bottom: 20px;
     }
 
     .service p {
         line-height: 1.58;
-        margin-top: 30px;
+        margin-bottom: 55px;
+    }
+
+    .service_menu img {
+        width: 100%;
     }
 }
 
@@ -458,6 +458,11 @@ body {
 @media screen and (max-width: 767px) {
     .gallery_logo {
         width: 142px;
+    }
+
+    .gallery_images {
+        display: block;
+        width: 100%;
     }
 }
 
@@ -508,21 +513,31 @@ body {
     }
 
     .event_wrap {
-        margin: 0 auto;
+        display: block;
         margin-top: 20px;
-        width: 335px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .event_info {
+        margin: 20px 25px;
     }
 
     .event_info li {
         font-size: 16px;
+        line-height: 1;
+    }
+
+    .event_info li + li {
+        margin-top: 25px;
     }
 
     .event_info li a {
         display: block;
-        max-width: 291px;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
+        margin-top: 4px;
     }
 }
 /*ACCESS*/
@@ -544,7 +559,7 @@ iframe {
 /*SP_ACCESS*/
 @media screen and (max-width: 767px) {
     .section_access {
-        margin-top: 30px;
+        margin-top: -20px;
     }
 
     .access_logo {
@@ -598,7 +613,7 @@ footer p {
         padding: 0;
         padding-top: 45px;
         padding-bottom: 40px;
-        margin-left: 12px;
+        margin-left: 20px;
     }
 
     .footer_logo {
@@ -626,5 +641,98 @@ footer p {
         bottom: 204px;
         width: 100px;
         z-index: 3;
+    }
+}
+
+/*スライダー調整*/
+.slick-dots {
+    bottom: 20px;
+}
+
+.slick-dots li.slick-active button:before,
+.slick-dots li button:before {
+    color: #fff;
+}
+
+.slick-dotted.slick-slider {
+    margin-bottom: 0;
+}
+
+/*ギャラリースライダー調整*/
+.lb-data .lb-number {
+    display: none !important;
+}
+/*矢印*/
+.slick-arrow {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    padding: 0;
+    width: 20px;
+    height: 38px;
+    color: transparent;
+    z-index: 1;
+    transition: opacity 0.5s;
+    z-index: 1;
+}
+.slick-arrow:hover {
+    opacity: 0.7;
+}
+
+/* 共通設定 */
+
+.slick-next::before,
+.slick-next::after,
+.slick-prev::before,
+.slick-prev::after {
+    position: absolute;
+    top: 30px;
+    bottom: 0;
+    margin: auto;
+    content: "";
+    vertical-align: middle;
+}
+.slick-next::after,
+.slick-prev::after {
+    width: 26px;
+    height: 26px;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+}
+
+/* next */
+
+.slick-next {
+    right: 100px;
+}
+.slick-next::after {
+    right: 100px;
+    transform: rotate(45deg);
+}
+
+/* prev */
+
+.slick-prev {
+    left: 100px;
+}
+.slick-prev::after {
+    left: 100px;
+    transform: rotate(-135deg);
+}
+
+@media screen and (max-width: 767px) {
+    .slick-next::after,
+    .slick-prev::after {
+        width: 20px;
+        height: 20px;
+        left: 0;
+    }
+    .slick-next {
+        right: 25px;
+    }
+    .slick-prev {
+        left: 25px;
     }
 }

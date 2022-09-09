@@ -7,11 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>デザインカフェ</title>
     <meta name="description" content="デザインカフェのサイトです。">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 
 <body>
+    <!--ヘッダー-->
     <div class="wrap">
         <header id="header">
             <ul class="header_slider">
@@ -19,6 +27,12 @@
                     <picture>
                         <source srcset="images/sp_main_vs@2x-100.jpg" media="(max-width: 767px)">
                         <img src="images/pc_first-100.jpg" alt="デザインカフェ　店内の様子">
+                    </picture>
+                </li>
+                <li>
+                    <picture>
+                        <source srcset="images/sp_main_vs_2@2x-100.jpg" media="(max-width: 767px)">
+                        <img src="images/slider_2.jpg" alt="デザインカフェ　店内の様子">
                     </picture>
                 </li>
             </ul>
@@ -52,18 +66,19 @@
                 <section class="section_heading">
                     <p class="lead">Have a happy day From a cup of coffee.</p>
                     <h2>ハッピーに溢れる1日を<br>1杯のコーヒーから。</h2>
-                    <p class="lead2">毎日を丁寧に大切に過ごしたい。だからこそ一杯一杯丁寧にコーヒーを入れ
-                        <br>足を運んでくれるお客さんには落ち着く空間とこだわりのコーヒーを提供したい。
-                    </p>
-                    <p class="sp_lead2">毎日を丁寧に大切に過ごしたい。
-                        <span>だからこそ一杯一杯丁寧にコーヒーを入れ</span>
-                        <span>足を運んでくれるお客さんには落ち着く空間と</span>
-                        <span>こだわりのコーヒーを提供したい。</span>
+                    <p class="lead2">毎日を丁寧に大切に過ごしたい。
+                        <br class="sp_only">
+                        だからこそ一杯一杯丁寧にコーヒーを入れ
+                        <br>
+                        足を運んでくれるお客さんには落ち着く空間と
+                        <br class="sp_only">
+                        こだわりのコーヒーを提供したい。
                     </p>
                 </section>
 
                 <!--ABOUT US-->
                 <section id="section_about" class="section_about">
+                    <h2 class="sp_about_logo"><img src="images/about_us@2x.png" alt="about_us"></h2>
                     <div class="about_main">
                         <picture>
                             <source srcset="images/about_us@2x-100.jpg" media="(max-width: 767px)">
@@ -82,26 +97,6 @@
                             を提供する上での想いや心がけていることなど、メッセージを
                             文章で紹介します。
                         </p>
-                    </div>
-                    <div class="sp_about_wrap">
-                        <h2 class="about_logo"><img src="images/about_us@2x.png" alt="about_us"></h2>
-                        <picture>
-                            <source srcset="images/about_us@2x-100.jpg" media="(max-width: 767px)">
-                            <img src="images/pc_about-100.jpg" alt="こだわりのホットコーヒー">
-                        </picture>
-                        <div class="about_text">
-                            <h3>私たちが提供する<br>こだわりのコーヒー</h3>
-                            <p>サービスを提供する上での想いや心がけているこ
-                                となど、メッセージを文章で紹介します。サービスを
-                                提供する上での想いや心がけていることなど、メッ
-                                セージを文章で紹介します。サービスを提供する
-                                上での想いや心がけていることなど、メッセージを
-                                文章で紹介します。サービスを提供する上での想
-                                いや心がけていることなど、メッセージを文章で紹
-                                介します。サービスを提供する上での想いや心が
-                                けていることなど、メッセージを文章で紹介します。
-                            </p>
-                        </div>
                     </div>
                 </section>
 
@@ -147,11 +142,18 @@
             <section id="section_gallery" class="section_gallery">
                 <h2 class="gallery_logo"><img src="images/gallery@2x.png" alt="ギャラリー"></h2>
                 <ul class="gallery_images">
-                    <li><img src="images/pc_gallary_05-100.jpg" alt="にぎわっている様子"></li>
-                    <li><img src="images/pc_gallary_04-100.jpg" alt="コーヒー豆の写真"></li>
-                    <li><img src="images/pc_gallary_03-100.jpg" alt="店内の写真"></li>
-                    <li><img src="images/pc_gallary_02-100.jpg" alt="カフェの文字"></li>
-                    <li><img src="images/pc_gallary_01-100.jpg" alt="ホットコーヒーの写真"></li>
+                    <li><a href="images/pc_gallary_05-100.jpg" data-lightbox="roadtrip"><img
+                                src="images/pc_gallary_05-100.jpg" alt="にぎわっている様子"></a></li>
+                    <li><a href="images/pc_gallary_04-100.jpg" data-lightbox="roadtrip"><img
+                                src="images/pc_gallary_04-100.jpg" alt="コーヒー豆の写真"></a></li>
+                    <li><a href="images/pc_gallary_03-100.jpg" data-lightbox="roadtrip"><img
+                                src="images/pc_gallary_03-100.jpg" alt="店内の写真"></a></li>
+                    <li><a href="images/pc_gallary_02-100.jpg" data-lightbox="roadtrip"><img
+                                src="images/pc_gallary_02-100.jpg" alt="カフェの文字"></a></li>
+                    <li><a href="images/pc_gallary_01-100.jpg" data-lightbox="roadtrip"><img
+                                src="images/pc_gallary_01-100.jpg" alt="ホットコーヒーの写真"></a></li>
+                    <li><a href="images/pc_gallary_01-100.jpg" data-lightbox="roadtrip"><img
+                                src="images/pc_gallary_01-100.jpg" alt="ホットコーヒーの写真"></a></li>
                 </ul>
             </section>
 
@@ -208,6 +210,82 @@
             $('.sp_btn, .sp_nav ul li').on('click', function () {
                 $('.sp_nav').fadeToggle('heading');
                 $('.sp_btn').toggleClass('open')
+            });
+            //ヘッダースライダー
+            $('.header_slider').slick({
+                autoplay: true,
+                autoplaySpeed: 2000,
+                dots: true,
+                arrows: false,
+            });
+            //ギャラリースライダー
+            $(document).ready(function () {
+                $('.gallery_images').slick({
+                    autoplay: true,
+                    autoplaySpeed: 2000,
+                    infinite: true,
+                    arrows: true,
+                    slidesToShow: 5,
+                    slidesToScroll: 1,
+                    responsive: [
+                        {
+                            breakpoint: 1024,
+                            settings: {
+                                slidesToShow: 3,
+                                slidesToScroll: 3,
+                                infinite: true,
+                            }
+                        },
+                        {
+                            breakpoint: 600,
+                            settings: {
+                                slidesToShow: 2,
+                                slidesToScroll: 2
+                            }
+                        },
+                        {
+                            breakpoint: 376,
+                            settings: {
+                                slidesToShow: 1,
+                                slidesToScroll: 1
+                            }
+                        }
+                    ]
+                });
+                //モーダルウィンドウ
+                lightbox.option({
+                    'resizeDuration': 200,
+                    'wrapAround': true,
+                })
+            });
+            // ページトップフェードイン
+            $('.page_top').hide(); // デフォルトでボタンを隠しておく
+            $(window).on('scroll', function () { // ウィンドウをスクロールした時に発火
+                if ($(this).scrollTop() > 200) { // スクロール値が200以上になったら
+                    $('.page_top').fadeIn(); // フェードイン
+                } else {
+                    $('.page_top').fadeOut(); // フェードアウト
+                }
+            });
+            $(window).on('scroll', function () {
+                scrollHeight = $(document).height();
+                scrollPosition = $(window).height() + $(window).scrollTop();
+                footHeight = $('footer').innerHeight() - 120;
+                if (scrollHeight - scrollPosition <= footHeight) {
+                    // ページトップボタンがフッター手前に来たらpositionとfixedからabsoluteに変更
+                    $('body').css({
+                        position: 'relative'
+                    })
+                    $('.page_top').css({
+                        position: 'absolute',
+                        bottom: footHeight,
+                    });
+                } else {
+                    $('.page_top').css({
+                        position: 'fixed',
+                        bottom: '40px',
+                    });
+                }
             });
         });
     </script>
