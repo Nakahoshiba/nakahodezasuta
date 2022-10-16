@@ -10,297 +10,358 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css"
         href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 
 <body>
     <!--ヘッダー-->
-    <header id="header">
-        <div class="header_img">
-            <picture>
-                <img src="images/pc_水引_1.png" alt="水引">
-            </picture>
+    <div class="wrap">
+        <header id="header">
+            <div class="header_img">
+                <picture>
+                    <source srcset="images/sp_水引@2x.png" media="(max-width: 767px)">
+                    <img src="images/pc_水引_1.png" alt="水引">
+                </picture>
+            </div>
+            <div class="header_wrap">
+                <h1 class="header_logo"><img src="images/sp_ロゴ@2x.png" alt="Mii design"></h1>
+                <p>むすんで、</p>
+                <p>つなっがって、</p>
+                <p> 花ひらく。</p>
+            </div>
+        </header>
+        <!--ナビゲーションメニュー-->
+        <div class="header_nav">
+            <nav class="pc_nav">
+                <ul>
+                    <li><a href="#section_works">Works</a></li>
+                    <li><a href="#section_service">Service</a></li>
+                    <li><a href="#section_about">About</a></li>
+                    <li><a href="#section_contact">Contact</a></li>
+                    <li><a href=""><img src="images/pc_インスタ@2x.png" alt="インスタアイコン"></a></li>
+                </ul>
+            </nav>
+            <p>SCROLL</p>
         </div>
-        <div class="header_wrap">
-            <h1 class="header_logo"><img src="images/sp_ロゴ@2x.png" alt="Mii design"></h1>
-            <p>むすんで、</p>
-            <p>つなっがって、</p>
-            <p> 花ひらく。</p>
-        </div>
-    </header>
-    <!--ナビゲーションメニュー-->
-    <div class="header_nav">
-        <nav class="pc_nav">
+        <!--ハンバーガー-->
+        <div class="sp_btn"><span></span></div>
+        <nav class="sp_nav">
             <ul>
                 <li><a href="#section_works">Works</a></li>
                 <li><a href="#section_service">Service</a></li>
                 <li><a href="#section_about">About</a></li>
                 <li><a href="#section_contact">Contact</a></li>
-                <li><a href=""><img src="images/pc_インスタ.png" alt="インスタアイコン"></a></li>
+                <li><a href=""><img src="images/pc_インスタ@2x.png" alt="インスタアイコン"></a></li>
             </ul>
         </nav>
-        <p>SCROLL</p>
-    </div>
-
-
-    <!--works-->
-    <section id="section_works" class="section_works">
-        <h1>Works</h1>
-        <ul class="works_images">
-            <li class="works1"><img src="images/works_1.png" alt="実績１"></li>
-            <li class="works2"><img src="images/works_2.png" alt="実績２"></li>
-            <li class="works3"><img src="images/works_3.png" alt="実績３"></li>
-            <li class="works4"><img src="images/works_4.png" alt="実績４"></li>
-            <li class="works5"><img src="images/works_5.png" alt="実績５"></li>
-            <li class="works6"><img src="images/works_6.png" alt="実績６"></li>
-        </ul>
-    </section>
-
-    <!--works1-->
-    <div class="works1_modal">
-        <ul class="works_list">
-            <li><img src="images/pc_モックアップ美容室.png" alt="モックアップ"></li>
-            <li><img src="images/pc_モックアップ美容室2.png" alt="モックアップ2"></li>
-            <li><img src="images/pc_モックアップ美容室3.png" alt="モックアップ3"></li>
-        </ul>
-        <div class="modal_text">
-            <h3>●制作意図</h3>
-            <p>美容院「LIFE　hair design」のリニューアルサイトです。色数を絞ってシンプルかつ繊細な雰囲気を演
-                出しました。conceptを囲った装飾はLIFESTYLE FITからLとFをモチーフにしています。また、ターゲッ
-                トである20代から50代の幅広い女性に好まれるよう、ピンクとベージュで落ち着いたデザインを意識しています。
-            </p>
-            <h3>●制作概要</h3>
-            <ul>
-                <li>制作期間<span>3週間</span></li>
-                <li>担当範囲<span>web design</span></li>
-                <li>使用ツール<span>Illustrator/Photoshop</span></li>
-                <li>料金<span>￥20,000</span></li>
-            </ul>
-        </div>
-    </div>
-    <!--works2-->
-    <div class="works2_modal">
-        <img src="images/pc_モックアップカフェ.png" alt="モックアップ">
-        <img src="images/pc_モックアップカフェ2.png" alt="モックアップ2">
-        <img src="images/pc_モックアップカフェ3.png" alt="モックアップ3">
-        <div class="modal_text">
-            <h3>●制作意図</h3>
-            <p>カフェ「DESIGN CAFE」のコーポレートサイトです。店内の雰囲気が分かるように写真を多く使ってい
-                ます。GALLERY箇所はスライダーを使い、画像をクリックするとモーダルウィンドウで読み込むようにして
-                います。ＰＣとＳＰで画像も使い分け、レスポンシブにも対応しています。
-            </p>
-            <h3>●制作概要</h3>
-            <ul>
-                <li>制作期間<span>3週間</span></li>
-                <li>担当範囲<span>コーディング</span></li>
-                <li>使用ツール<span>Visual Studio Code</span></li>
-                <li>料金<span>￥50,000</span></li>
-            </ul>
-        </div>
-    </div>
-    <!--works3-->
-    <div class="works3_modal">
-        <img src="images/pc_モックアップピープル.png" alt="モックアップ">
-        <img src="images/pc_モックアップピープル2.png" alt="モックアップ2">
-        <img src="images/pc_モックアップピープル3.png" alt="モックアップ3">
-        <div class="modal_text">
-            <h3>●制作意図</h3>
-            <p>Peoplegood様のコーポレートサイトです。信頼感を得れるよう色は青と白を基調としています。サービ
-                ス内容が正確に伝わるように写真とイラストを使い説明しました。また、集客アップにつながるよう、無
-                料相談のボタンを多めに配置しました。
-            </p>
-            <h3>●制作概要</h3>
-            <ul>
-                <li>制作期間<span>3週間</span></li>
-                <li>担当範囲<span>web design</span></li>
-                <li>使用ツール<span>Illustrator/Photoshop</span></li>
-                <li>料金<span>￥20,000</span></li>
-            </ul>
-        </div>
-    </div>
-    <!--works4-->
-    <div class="works4_modal">
-        <img src="images/pc_バナー1.png" alt="モックアップ">
-        <div class="modal_text">
-            <h3>●制作意図</h3>
-            <p>
-                アウトドアフェスタのバナーを作成しました。キャンプをイメージしやすいように、Photshopで2枚の画
-                像を合成しています。体感が想像しやすいようフォントにこだわりました。
-            </p>
-            <h3>●制作概要</h3>
-            <ul>
-                <li>制作期間<span>1週間</span></li>
-                <li>使用ツール<span>Illustrator/Photoshop</span></li>
-                <li>料金<span>￥3,000</span></li>
-            </ul>
-        </div>
-    </div>
-    <!--works5-->
-    <div class="works5_modal">
-        <img src="images/pc_バナー2.png" alt="モックアップ">
-        <div class="modal_text">
-            <h3>●制作意図</h3>
-            <p>
-                新発売の化粧品のバナーを作成しました。効果が一目見て分かるように配置しています。今だけの
-                SPECIAL PRICEも吹き出しを使い、より目立つようにデザインしました。
-            </p>
-            <h3>●制作概要</h3>
-            <ul>
-                <li>制作期間<span>1週間</span></li>
-                <li>使用ツール<span>Illustrator/Photoshop</span></li>
-                <li>料金<span>￥3,000</span></li>
-            </ul>
-        </div>
-    </div>
-    <!--works6-->
-    <div class="works6_modal">
-        <img src="images/pc_バナー3.png" alt="モックアップ">
-        <div class="modal_text">
-            <h3>●制作意図</h3>
-            <p>
-                webデザイン講座のバナーを作成しました。新しいことを始めるきっかけになるよう扉を使って表現し
-                ています。期間と取得できるスキルが明確に分かるようにデザインしています。
-            </p>
-            <h3>●制作概要</h3>
-            <ul>
-                <li>制作期間<span>1週間</span></li>
-                <li>使用ツール<span>Illustrator/Photoshop</span></li>
-                <li>料金<span>￥3,000</span></li>
-            </ul>
-        </div>
-    </div>
-    <!--service-->
-    <section id="section_service" class="section_service">
-        <div class="service">
-            <h1>Service</h1>
-            <picture>
-                <img src="images/pc_背景.png" alt="背景">
-            </picture>
-            <div class="service_wrap">
-                <div class="service_menu">
-                    <h2>WEBデザイン</h2>
-                    <img src="images/ウェブ@2x.png" alt="webアイコン">
-                    <p>
-                        お客さまの要望やらしさを引き出すヒアリングをするところから、イメージを明確にしていきデザインを作成いたします。目的の達成や課題解決ができるように、寄り添ったサービスをご提供いたします。
-                    </p>
+        <main>
+            <!--works-->
+            <section id="section_works" class="section_works">
+                <div class="works_wrap">
+                    <h2>Works</h2>
+                    <ul class="works_images">
+                        <li class="works1"><img src="images/works_1.png" alt="実績１"></li>
+                        <li class="works2"><img src="images/works_2.png" alt="実績２"></li>
+                        <li class="works3"><img src="images/works_3.png" alt="実績３"></li>
+                        <li class="works4"><img src="images/works_4.png" alt="実績４"></li>
+                        <li class="works5"><img src="images/works_5.png" alt="実績５"></li>
+                        <li class="works6"><img src="images/works_6.png" alt="実績６"></li>
+                    </ul>
                 </div>
-                <div class="service_menu">
-                    <h2>コーディング</h2>
-                    <img src="images/コーディング@2x.png" alt="コーディングアイコン">
-                    <p>
-                        HTML/CSSを用いて適切なタグを使用し、コーディングいたします。jQueryのライブラリを使い簡単な動きをつけることも可能です。レスポンシブにも対応しています。使用エディタVisual
-                        Studio Codeです。
-                    </p>
+                <div class="works_icon">
+                    <div class="arrow-round arrow-left"></div>
+                    <div class="arrow-round arrow-right"></div>
                 </div>
-                <div class="service_menu">
-                    <h2>Graphicデザイン</h2>
-                    <img src="images/グラフィック@2x.png" alt="grephicアイコン">
-                    <p>
-                        チラシ・ポスター・名刺・フライヤー・ロゴマークなどの印刷物のデザインを承っています。目的を達成できるように、お客さまが大切にしていることや思いをベースにデザインを作成いたします。
-                    </p>
-                </div>
-            </div>
-            <div class="service_icon">
-                <img src="images/PC_糸１.png" alt="糸の画像１">
-            </div>
-        </div>
-    </section>
-    <!--about-->
-    <section id="section_about" class="section_about">
-        <div class="about_lead">
-            <p>ちょっとひとよりおはなしが好きです。</p>
-            <p>笑うときはひき笑いが多いです。</p>
-            <p>楽しみながら取り組むことが得意です。</p>
-            <p>ひとつの出会いを大切にしています。</p>
-        </div>
-        <div class="about_wrap">
-            <div class="about_images">
-                <h1>About</h1>
-                <picture class="about_img_1">
-                    <img src="images/about_img@2x-80.jpg" alt="プロフィール">
-                </picture>
-                <picture class="about_img_2">
-                    <img src="images/about_img2@2x-80.jpg" alt="プロフィール背景">
-                </picture>
-            </div>
-            <div class="about_info">
-                <h3>●ニックネーム</h3>
-                <h2>misaki</h2>
-                <p>1992年生まれ。いて座。
-                    自動車販売営業アシスタントから歯科業界に転身。
-                    人とかかわることが好きです。どんな人なのか、何を求めているのか
-                    などを考えながらこれまで働いてきました。どのような業種でもそれは
-                    変わることはないと思っています。お客様に向き合って自分らしくデザ
-                    インをお届けしたいと思っております。</p>
-                <h3>●好きなモノ・コト</h3>
-                <p>#料理 #バレーボール #漫画
-                    #季節の変わり目 #バチェラー
-                    #ベージュ #BBQ #ファッション</p>
-            </div>
-        </div>
-    </section>
-    <!--contact-->
-    <section id="section_contact" class="section_contact">
-        <h1>Contact</h1>
-        <p>最後までご覧いただき、ありがとうございます。
-            お仕事のご依頼やお見積り、ご不明な点などございましたら、お気軽にお問い合わせください。
-            下記フォームよりわかる範囲でご記入ください。</p>
-        <div class="instgram">
-            <img src="images/pc_インスタ.png" alt="インスタアイコン">
-        </div>
-        <div class="contact_wrap">
-            <h2>インスタグラムのDMからも受け付けております。</h2>
-            <p>お名前</p>
-            <p>メールアドレス</p>
-            <p>お問い合わせ内容</p>
-            <p>つながる</p>
-        </div>
-    </section>
+            </section>
 
-    <!--フッター-->
-    <footer>
-        <div class="footer_wrap">
-            <h1 class="header_logo"><img src="images/pc_ロゴ.png" alt="Mii design"></h1>
-            <nav class="pc_nav">
-                <ul>
-                    <li><a href="section_works">Works</a></li>
-                    <li><a href="section_service">Service</a></li>
-                    <li><a href="section_about">About</a></li>
-                    <li><a href="section_contact">Contact</a></li>
-                    <li><a href=""><img src="images/pc_インスタ.png" alt="インスタアイコン"></a></li>
+            <!--works1-->
+            <div class="works1_modal">
+                <ul class="works_list">
+                    <li><img src="images/pc_モックアップ美容室.png" alt="モックアップ"></li>
+                    <li><img src="images/pc_モックアップ美容室2.png" alt="モックアップ2"></li>
+                    <li><img src="images/pc_モックアップ美容室3.png" alt="モックアップ3"></li>
                 </ul>
-            </nav>
-        </div>
-        <p>©︎mii design</p>
-    </footer>
-
+                <div class="modal_text">
+                    <h3>●制作意図</h3>
+                    <p>美容院「LIFE　hair design」のリニューアルサイトです。色数を絞ってシンプルかつ繊細な雰囲気を演
+                        出しました。conceptを囲った装飾はLIFESTYLE FITからLとFをモチーフにしています。また、ターゲッ
+                        トである20代から50代の幅広い女性に好まれるよう、ピンクとベージュで落ち着いたデザインを意識しています。
+                    </p>
+                    <h3>●制作概要</h3>
+                    <ul>
+                        <li>制作期間<span>3週間</span></li>
+                        <li>担当範囲<span>web design</span></li>
+                        <li>使用ツール<span>Illustrator/Photoshop</span></li>
+                        <li>料金<span>￥20,000</span></li>
+                    </ul>
+                </div>
+            </div>
+            <!--works2-->
+            <div class="works2_modal">
+                <img src="images/pc_モックアップカフェ.png" alt="モックアップ">
+                <img src="images/pc_モックアップカフェ2.png" alt="モックアップ2">
+                <img src="images/pc_モックアップカフェ3.png" alt="モックアップ3">
+                <div class="modal_text">
+                    <h3>●制作意図</h3>
+                    <p>カフェ「DESIGN CAFE」のコーポレートサイトです。店内の雰囲気が分かるように写真を多く使ってい
+                        ます。GALLERY箇所はスライダーを使い、画像をクリックするとモーダルウィンドウで読み込むようにして
+                        います。ＰＣとＳＰで画像も使い分け、レスポンシブにも対応しています。
+                    </p>
+                    <h3>●制作概要</h3>
+                    <ul>
+                        <li>制作期間<span>3週間</span></li>
+                        <li>担当範囲<span>コーディング</span></li>
+                        <li>使用ツール<span>Visual Studio Code</span></li>
+                        <li>料金<span>￥50,000</span></li>
+                    </ul>
+                </div>
+            </div>
+            <!--works3-->
+            <div class="works3_modal">
+                <img src="images/pc_モックアップピープル.png" alt="モックアップ">
+                <img src="images/pc_モックアップピープル2.png" alt="モックアップ2">
+                <img src="images/pc_モックアップピープル3.png" alt="モックアップ3">
+                <div class="modal_text">
+                    <h3>●制作意図</h3>
+                    <p>Peoplegood様のコーポレートサイトです。信頼感を得れるよう色は青と白を基調としています。サービ
+                        ス内容が正確に伝わるように写真とイラストを使い説明しました。また、集客アップにつながるよう、無
+                        料相談のボタンを多めに配置しました。
+                    </p>
+                    <h3>●制作概要</h3>
+                    <ul>
+                        <li>制作期間<span>3週間</span></li>
+                        <li>担当範囲<span>web design</span></li>
+                        <li>使用ツール<span>Illustrator/Photoshop</span></li>
+                        <li>料金<span>￥20,000</span></li>
+                    </ul>
+                </div>
+            </div>
+            <!--works4-->
+            <div class="works4_modal">
+                <img src="images/pc_バナー1.png" alt="モックアップ">
+                <div class="modal_text">
+                    <h3>●制作意図</h3>
+                    <p>
+                        アウトドアフェスタのバナーを作成しました。キャンプをイメージしやすいように、Photshopで2枚の画
+                        像を合成しています。体感が想像しやすいようフォントにこだわりました。
+                    </p>
+                    <h3>●制作概要</h3>
+                    <ul>
+                        <li>制作期間<span>1週間</span></li>
+                        <li>使用ツール<span>Illustrator/Photoshop</span></li>
+                        <li>料金<span>￥3,000</span></li>
+                    </ul>
+                </div>
+            </div>
+            <!--works5-->
+            <div class="works5_modal">
+                <img src="images/pc_バナー2.png" alt="モックアップ">
+                <div class="modal_text">
+                    <h3>●制作意図</h3>
+                    <p>
+                        新発売の化粧品のバナーを作成しました。効果が一目見て分かるように配置しています。今だけの
+                        SPECIAL PRICEも吹き出しを使い、より目立つようにデザインしました。
+                    </p>
+                    <h3>●制作概要</h3>
+                    <ul>
+                        <li>制作期間<span>1週間</span></li>
+                        <li>使用ツール<span>Illustrator/Photoshop</span></li>
+                        <li>料金<span>￥3,000</span></li>
+                    </ul>
+                </div>
+            </div>
+            <!--works6-->
+            <div class="works6_modal">
+                <img src="images/pc_バナー3.png" alt="モックアップ">
+                <div class="modal_text">
+                    <h3>●制作意図</h3>
+                    <p>
+                        webデザイン講座のバナーを作成しました。新しいことを始めるきっかけになるよう扉を使って表現し
+                        ています。期間と取得できるスキルが明確に分かるようにデザインしています。
+                    </p>
+                    <h3>●制作概要</h3>
+                    <ul>
+                        <li>制作期間<span>1週間</span></li>
+                        <li>使用ツール<span>Illustrator/Photoshop</span></li>
+                        <li>料金<span>￥3,000</span></li>
+                    </ul>
+                </div>
+            </div>
+            <!--service-->
+            <section class="section_service">
+                <div class="service service_bg">
+                    <h2>Service</h2>
+                    <div class="service_wrap">
+                        <div class="service_menu">
+                            <h3>WEBデザイン</h3>
+                            <img src="images/ウェブ@2x.png" alt="webアイコン">
+                            <p>
+                                お客さまの要望やらしさを引き出すヒアリングをするところから、イメージを明確にしていきデザインを作成いたします。目的の達成や課題解決ができるように、寄り添ったサービスをご提供いたします。
+                            </p>
+                        </div>
+                        <div class="service_menu">
+                            <h3>コーディング</h3>
+                            <img src="images/コーディング@2x.png" alt="コーディングアイコン">
+                            <p>
+                                HTML/CSSを用いて適切なタグを使用し、コーディングいたします。jQueryのライブラリを使い簡単な動きをつけることも可能です。レスポンシブにも対応しています。使用エディタVisual
+                                Studio Codeです。
+                            </p>
+                        </div>
+                        <div class="service_menu">
+                            <h3>Graphicデザイン</h3>
+                            <img src="images/グラフィック@2x.png" alt="grephicアイコン">
+                            <p>
+                                チラシ・ポスター・名刺・フライヤー・ロゴマークなどの印刷物のデザインを承っています。目的を達成できるように、お客さまが大切にしていることや思いをベースにデザインを作成いたします。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="service_icon1">
+                    <picture>
+                        <source srcset="images/sp_糸_1@2x.png" media="(max-width: 767px)">
+                        <img src="images/pc_糸_1.png" alt="糸の画像1">
+                    </picture>
+                </div>
+                <div class="service_icon2">
+                    <img src="images/pc_糸_2.png" alt="糸の画像2">
+                </div>
+            </section>
+            <!--about-->
+            <section id="section_about" class="section_about">
+                <h2 class="sp_only">About</h2>
+                <div class="about_lead">
+                    <p>ちょっとひとよりおはなしが好きです。</p>
+                    <p>笑うときはひき笑いが多いです。</p>
+                    <p>楽しみながら取り組むことが得意です。</p>
+                    <p>ひとつの出会いを大切にしています。</p>
+                </div>
+                <div class="about_wrap">
+                    <div class="about_images">
+                        <h2>About</h2>
+                        <picture class="about_img_1">
+                            <img src="images/about_img2@2x-80.jpg" alt="プロフィール背景">
+                        </picture>
+                        <picture class="about_img_2">
+                            <img src="images/about_img1@2x-80.jpg" alt="プロフィール">
+                        </picture>
+                    </div>
+                    <div class="about_info">
+                        <h3>●ニックネーム</h3>
+                        <h2>misaki</h2>
+                        <p>1992年生まれ。いて座。</p>
+                        <p>自動車販売営業アシスタントから歯科業界に転身。</p>
+                        <p>人とかかわることが好きです。どんな人なのか、何を求めているのかなどを考えながらこれまで働いてきました。どのような業種でもそれは変わることはないと思っています。お客様に向き合って自分らしくデザインをお届けしたいと思っております。
+                        </p>
+                        <div class="border"></div>
+                        <h3>●好きなモノ・コト</h3>
+                        <p>#料理　#バレーボール</p>
+                        <p>#漫画#季節の変わり目　#バチェラー</p>
+                        <p>#ベージュ　#BBQ　#ファッション</p>
+                    </div>
+                </div>
+                <div class="service_icon3">
+                    <picture>
+                        <source srcset="images/sp_糸_2@2x.png" media="(max-width: 375px)">
+                        <img src="images/pc_糸_3.png" alt="糸の画像3">
+                    </picture>
+                </div>
+            </section>
+            <!--contact-->
+            <section id="section_contact" class="section_contact">
+                <h2>Contact</h2>
+                <p class="contact_lead">
+                    最後までご覧いただき、ありがとうございます。
+                    <span>お仕事のご依頼やお見積り、ご不明な点などございましたら、お気軽にお問い合わせください。</span>
+                    下記フォームよりわかる範囲でご記入ください。
+                </p>
+                <div class="instgram">
+                    <img src="images/contact_insta@2x.png" alt="インスタアイコン">
+                    <p>インスタグラムのDMからも受け付けております。</p>
+                </div>
+                <form
+                    action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdyCM5A5qMwkZVh7HktSUkh8TQoYcAlM83vWGXOKHvOX6pG3Q/formResponse">
+                    <div class="Contact_name">
+                        <label for="name">名前</label>
+                        <div class="name_wrap">
+                            <input id="name" type="text" name="entry.2038188850" placeholder="性" class="textbox1">
+                            <input id="name2" type="text" name="entry.1098547991" placeholder="名" class="textbox1">
+                        </div>
+                    </div>
+                    <div class="contact_email">
+                        <label for="email">メールアドレス</label>
+                        <input id="email" type="text" name="entry.1864513831" placeholder="example@mail.co.jp"
+                            class="textbox2">
+                    </div>
+                    <div class="contact_msg">
+                        <label for="text">お問い合わせ内容</label>
+                        <input id="text" type="text" name="entry.400273912" placeholder="" class="textbox3">
+                    </div>
+                    <button type="submit" name="button" value="送信">つながる</button>
+                </form>
+            </section>
+        </main>
+        <!--フッター-->
+        <footer>
+            <div class="footer_img">
+                <img src="images/pc_糸_4.png" alt="糸の画像4">
+            </div>
+            <div class="footer_wrap">
+                <h1 class="footer_logo"><img src="images/pc_フッター.png" alt="Mii design"></h1>
+                <nav class="footer_nav">
+                    <ul>
+                        <li><a href="#section_works">Works</a></li>
+                        <li><a href="#section_service">Service</a></li>
+                        <li><a href="#section_about">About</a></li>
+                        <li><a href="#section_contact">Contact</a></li>
+                        <li><a href=""><img src="images/footer_insta@2x.png" alt="インスタアイコン"></a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer_smalll">
+                <small>©︎ mii design</small>
+            </div>
+        </footer>
+    </div>
+    <!--ページトップ-->
+    <div class="top">
+        <div class="arrow-top"></div>
+        <a href="#header">
+            <p>TOP</p>
+        </a>
+    </div>
     <script>
-        //worksスライダー
         $(function () {
             //ここの中に記述
-            $('.works1').click(function () {
-                $('.works1_modal').fadeToggle();
+            $('.sp_btn, .sp_nav ul li').on('click', function () {
+                $('.sp_nav').fadeToggle('heading');
+                $('.sp_btn').toggleClass('open')
             });
-            $('.works2').click(function () {
-                $('.works2_modal').fadeToggle();
-            });
-            $('.works3').click(function () {
-                $('.works3_modal').fadeToggle();
-            });
-            $('.works4').click(function () {
-                $('.works4_modal').fadeToggle();
-            });
-            $('.works5').click(function () {
-                $('.works5_modal').fadeToggle();
-            });
-            $('.works6').click(function () {
-                $('.works6_modal').fadeToggle();
-            });
+            //worksスライダー
+            $(function () {
+                //ここの中に記述
+                $('.works1').click(function () {
+                    $('.works1_modal').fadeToggle();
+                });
+                $('.works2').click(function () {
+                    $('.works2_modal').fadeToggle();
+                });
+                $('.works3').click(function () {
+                    $('.works3_modal').fadeToggle();
+                });
+                $('.works4').click(function () {
+                    $('.works4_modal').fadeToggle();
+                });
+                $('.works5').click(function () {
+                    $('.works5_modal').fadeToggle();
+                });
+                $('.works6').click(function () {
+                    $('.works6_modal').fadeToggle();
+                });
     </script>
 </body>
 
